@@ -4,27 +4,19 @@ sidebar_position: 1
 
 # Installation
 
-This guide walks you through setting up ink on your machine.
+Get ink running on your machine in seconds.
 
-## Prerequisites
-
-- **Java Development Kit (JDK) 21** — ink runs on the JVM
-- **Git** — For cloning the repository
-
-## Clone the Repository
+## Install the CLI
 
 ```bash
-git clone https://github.com/inklang/ink.git
-cd ink
+npm install -g @inklang/quill
 ```
 
-## Build with Gradle
+Verify installation:
 
 ```bash
-./gradlew build
+quill --version
 ```
-
-This compiles the language and runs the test suite. You should see all tests pass.
 
 ## Run Your First Program
 
@@ -37,7 +29,7 @@ print("Hello, ink!")
 Run it:
 
 ```bash
-./gradlew run --args="hello.ink"
+quill run hello.ink
 ```
 
 You should see:
@@ -46,17 +38,23 @@ You should see:
 Hello, ink!
 ```
 
-## Development Setup
+## Command Reference
 
-### IntelliJ IDEA
+| Command | Description |
+|---------|-------------|
+| `quill run <file>` | Run an ink program |
+| `quill build <file>` | Build to deployable JAR |
+| `quill --help` | Show all commands |
 
-1. Open the project folder in IntelliJ
-2. Select "Import Gradle project"
-3. The Kotlin plugin is included via Gradle toolchains
+## File Naming
 
-### VS Code
+ink source files use the `.ink` extension:
 
-Install the ink extension when available, or use the Kotlin language extension for basic syntax highlighting.
+```
+hello.ink
+myprogram.ink
+game.ink
+```
 
 ## Next Steps
 

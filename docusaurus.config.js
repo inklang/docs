@@ -3,8 +3,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'quill Programming Language',
-  tagline: 'A modern, expressive programming language',
+  title: 'ink Programming Language',
+  tagline: 'A modern scripting language for PaperMC',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -31,7 +31,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/inklang/ainscript/tree/main/docs/',
+          editUrl: 'https://github.com/inklang/ink/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -39,8 +39,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          blogTitle: 'quill Blog',
-          blogDescription: 'Updates and articles about the quill programming language',
+          blogTitle: 'ink Blog',
+          blogDescription: 'Updates and articles about the ink programming language',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -54,12 +54,14 @@ const config = {
     ({
       image: 'img/social-card.jpg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'quill',
+        title: 'ink',
         logo: {
-          alt: 'quill Logo',
+          alt: 'ink Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -67,7 +69,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Documentation',
+            label: 'Docs',
           },
           {
             to: '/docs/examples',
@@ -76,14 +78,14 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/inklang/ainscript',
+            href: 'https://github.com/inklang/ink',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Learn',
@@ -92,10 +94,6 @@ const config = {
                 label: 'Getting Started',
                 to: '/docs/intro',
               },
-              {
-                label: 'Language Reference',
-                to: '/docs/reference/overview',
-              },
             ],
           },
           {
@@ -103,7 +101,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/inklang/ainscript',
+                href: 'https://github.com/inklang/ink',
               },
               {
                 label: 'Discord',
@@ -120,16 +118,16 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/inklang/ainscript',
+                href: 'https://github.com/inklang/ink',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} quill Language. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ink Language. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        darkTheme: prismThemes.github,
         additionalLanguages: ['kotlin'],
       },
     }),

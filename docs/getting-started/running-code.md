@@ -6,12 +6,10 @@ sidebar_position: 3
 
 Learn different ways to run your ink programs.
 
-## Using Gradle
-
-The standard way to run ink programs:
+## Running a Program
 
 ```bash
-./gradlew run --args="filename.ink"
+quill run hello.ink
 ```
 
 ## Running Multiple Files
@@ -19,38 +17,28 @@ The standard way to run ink programs:
 You can pass multiple files (they execute in order):
 
 ```bash
-./gradlew run --args="main.ink utils.ink"
+quill run main.ink utils.ink
 ```
 
-## File Naming
+## Building for Production
 
-ink source files use the `.ink` extension:
+Build a standalone JAR that can run on any Paper server:
 
+```bash
+quill build script.ink
 ```
-hello.ink
-myprogram.ink
-game.ink
-```
+
+This outputs a JAR file ready for deployment.
 
 ## Common Issues
 
-### "Could not find or load main class"
+### "command not found: quill"
 
-Run `./gradlew build` first to compile the project.
+Run `npm install -g @inklang/quill` to reinstall the CLI.
 
 ### "File not found"
 
-Make sure you're in the project root directory and the file path is correct.
-
-## Building a JAR
-
-To build a deployable JAR for Paper servers:
-
-```bash
-./gradlew shadowJar
-```
-
-The output will be in `build/libs/inklang-paper-1.0-SNAPSHOT.jar`.
+Make sure the file path is correct and you're in the right directory.
 
 ## Next Steps
 

@@ -17,7 +17,7 @@ print("Hello, World!")
 Run it:
 
 ```bash
-./gradlew run --args="hello.ink"
+quill run hello.ink
 ```
 
 Output:

@@ -1,30 +1,165 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * ink documentation - Black & White theme
  */
 
-/* You can override the default Infima variables here. */
+/* Override Infima variables for black and white */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #000000;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #333333;
+  --ifm-color-primary-lighter: #666666;
+  --ifm-color-primary-lightest: #999999;
+
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-color-base: #000000;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 0 0 #000000;
+  --ifm-footer-background-color: #ffffff;
+  --ifm-footer-color: #000000;
+  --ifm-footer-link-color: #000000;
+
+  --ifm-link-color: #000000;
+  --ifm-link-hover-color: #333333;
+
+  --ifm-breadcrumb-color-active: #000000;
+  --ifm-breadcrumb-background-active: #f5f5f5;
+
+  --ifm-sidebar-border-color: #000000;
+  --ifm-toc-border-color: #000000;
+
+  --ifm-table-border-color: #000000;
+  --ifm-table-stripe-background: #f5f5f5;
+
+  --ifm-blockquote-border-left-color: #000000;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Disable dark mode entirely - force light theme */
+[data-theme='dark'],
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #000000;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #333333;
+  --ifm-color-primary-lighter: #666666;
+  --ifm-color-primary-lightest: #999999;
+
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-color-base: #000000;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 0 0 #000000;
+  --ifm-footer-background-color: #ffffff;
+  --ifm-footer-color: #000000;
+  --ifm-footer-link-color: #000000;
+
+  --ifm-link-color: #000000;
+  --ifm-link-hover-color: #333333;
+
+  --ifm-breadcrumb-color-active: #000000;
+  --ifm-breadcrumb-background-active: #f5f5f5;
+
+  --ifm-sidebar-border-color: #000000;
+  --ifm-toc-border-color: #000000;
+
+  --ifm-table-border-color: #000000;
+  --ifm-table-stripe-background: #f5f5f5;
+
+  --ifm-blockquote-border-left-color: #000000;
+}
+
+/* Basic styling */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid #000000;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #000000;
+}
+
+/* Sidebar */
+.menu {
+  border-right: 1px solid #000000;
+}
+
+.menu__link {
+  color: #000000;
+}
+
+.menu__link:hover,
+.menu__link--active {
+  background-color: #f5f5f5;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Code blocks */
+.prism-code {
+  background-color: #f5f5f5 !important;
+  border: 1px solid #000000;
+}
+
+.token {
+  color: #000000 !important;
+}
+
+/* Buttons */
+.button {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Links */
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #333333;
+}
+
+/* Tables */
+table {
+  border: 1px solid #000000;
+}
+
+th, td {
+  border: 1px solid #000000;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #000000;
+  background-color: #f5f5f5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+/* Horizontal rules */
+hr {
+  border-color: #000000;
 }
